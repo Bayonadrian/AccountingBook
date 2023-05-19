@@ -1,10 +1,9 @@
 # Welcome to Accounting Book
 
-This is a book of Accounting made by an student to students.
+This is a book of Accounting made by an student for students
 
 ```{contents}
 :local:
-:depth: 1
 ```
 
-# Accounting Basics
+# Accounting
