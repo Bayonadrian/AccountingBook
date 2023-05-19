@@ -1,0 +1,1195 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Accounting &#8212; Accounting Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="application/vnd.jupyter.widget-state+json">{"state": {"667bf7c75f2a4a4c9e9c3e69ad737a8d": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0[.]0", "read_only": false, "renderer": null, "row_end": 5, "row_start": 0, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [10, 10, 10, 10, 10, 10]}}, "410292e56eb34054b62c3c2a232d3753": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0[.]0", "read_only": false, "renderer": null, "row_end": 5, "row_start": 0, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1, 10, 20, 30, 40, 50]}}, "c6fb5192fffa498594dda0e155a105da": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0[.]0", "read_only": false, "renderer": null, "row_end": 5, "row_start": 0, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1000, 1000, 1000, 1000, 1000, 1000]}}, "dd002c12479044a88b0a3a48ba60d3f6": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 3, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0[.]0", "read_only": false, "renderer": null, "row_end": 5, "row_start": 0, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [0, 0, 0, 0, 0, 0]}}, "28d703371c7a486dbd773f476b31c315": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "e8a6476111744b96aa3e5a84340f2b3a": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.7.0", "_view_name": "SheetView", "cells": ["IPY_MODEL_667bf7c75f2a4a4c9e9c3e69ad737a8d", "IPY_MODEL_410292e56eb34054b62c3c2a232d3753", "IPY_MODEL_c6fb5192fffa498594dda0e155a105da", "IPY_MODEL_dd002c12479044a88b0a3a48ba60d3f6"], "column_headers": ["Variable Unit Cost", "Quantity", "Fixed Cost", "Variable Cost"], "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_28d703371c7a486dbd773f476b31c315", "named_cells": {}, "row_headers": ["0", "1", "2", "3", "4", "5"], "row_resizing": true, "rows": 6, "search_token": "", "stretch_headers": "all", "tabbable": null, "tooltip": null}}, "25a06521af354b25b71169618aaa1862": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "ae930b7158704a25b6646c8a61c7593d": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.7.0", "_view_name": "SheetView", "cells": ["IPY_MODEL_4750da5c6ef74b61ba074e80c99ffef4", "IPY_MODEL_7791f10945e24be3bd9d9223dcb4d06f", "IPY_MODEL_47fd6bde09794f7fa6c20293a131e533", "IPY_MODEL_6ed74fe03b2e48138fad6edeeea9cde5", "IPY_MODEL_519fe71f94b94f47b5e63ff7a5326a6a", "IPY_MODEL_b5e43a89f1e549349bac6c0feb4f3595"], "column_headers": true, "column_resizing": true, "column_width": null, "columns": 3, "layout": "IPY_MODEL_25a06521af354b25b71169618aaa1862", "named_cells": {}, "row_headers": true, "row_resizing": true, "rows": 7, "search_token": "", "stretch_headers": "all", "tabbable": null, "tooltip": null}}, "4750da5c6ef74b61ba074e80c99ffef4": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Variable Unit Cost"}}, "7791f10945e24be3bd9d9223dcb4d06f": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 6, "row_start": 1, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [10, 10, 10, 10, 10, 10]}}, "47fd6bde09794f7fa6c20293a131e533": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Quantity"}}, "6ed74fe03b2e48138fad6edeeea9cde5": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 6, "row_start": 1, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1, 10, 20, 30, 40, 50]}}, "519fe71f94b94f47b5e63ff7a5326a6a": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "LightGreen"}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Variable Cost"}}, "b5e43a89f1e549349bac6c0feb4f3595": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 6, "row_start": 1, "squeeze_column": true, "squeeze_row": false, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [10, 100, 200, 300, 400, 500]}}, "49ff4ecf7cb04c7ca7183f21bf281ea1": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0[.]0", "read_only": false, "renderer": null, "row_end": 5, "row_start": 0, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1000, 1000, 1000, 1000, 1000, 1000]}}, "d55227c2a63d4cd4a51ef6b261b53720": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "0129d2f742f94328bb1ae9840655f3d9": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.7.0", "_view_name": "SheetView", "cells": ["IPY_MODEL_49ff4ecf7cb04c7ca7183f21bf281ea1"], "column_headers": ["Fixed Cost"], "column_resizing": true, "column_width": null, "columns": 1, "layout": "IPY_MODEL_d55227c2a63d4cd4a51ef6b261b53720", "named_cells": {}, "row_headers": ["0", "1", "2", "3", "4", "5"], "row_resizing": true, "rows": 6, "search_token": "", "stretch_headers": "all", "tabbable": null, "tooltip": null}}, "27dfa16ff2034dbc81c1ab60280cda9f": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0[.]0", "read_only": false, "renderer": null, "row_end": 5, "row_start": 0, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1, 10, 20, 30, 40, 50]}}, "b720ec5f2eaa45b1b926d07718e5b42f": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0[.]0", "read_only": false, "renderer": null, "row_end": 5, "row_start": 0, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1000, 1000, 1000, 1000, 1000, 1000]}}, "1019835e7ba740d99a924c8b3684b6cf": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "ef1f0263e6ec46daba89d5760a608e6b": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.7.0", "_view_name": "SheetView", "cells": ["IPY_MODEL_27dfa16ff2034dbc81c1ab60280cda9f", "IPY_MODEL_b720ec5f2eaa45b1b926d07718e5b42f"], "column_headers": ["Quantity", "Fixed Cost"], "column_resizing": true, "column_width": null, "columns": 2, "layout": "IPY_MODEL_1019835e7ba740d99a924c8b3684b6cf", "named_cells": {}, "row_headers": ["0", "1", "2", "3", "4", "5"], "row_resizing": true, "rows": 6, "search_token": "", "stretch_headers": "all", "tabbable": null, "tooltip": null}}, "1f4c27f7cbf44dc3b104415c1e442487": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "599161a5e8744e21aacafa3e01ed8234": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.7.0", "_view_name": "SheetView", "cells": ["IPY_MODEL_42f891ff1fb445ddb727fdddcc280ea4", "IPY_MODEL_2ef5c2f9f7c441ff920b2d30cbcfc322", "IPY_MODEL_1a0e41921de947c9bf881a6969cb5ed7", "IPY_MODEL_e98f269d00804bd2af3730b5d75b65d5", "IPY_MODEL_17e7603c20e8482f9c8b128c815ca4c0", "IPY_MODEL_9c0e08657f194985a03f5ff3764f84db"], "column_headers": true, "column_resizing": true, "column_width": null, "columns": 3, "layout": "IPY_MODEL_1f4c27f7cbf44dc3b104415c1e442487", "named_cells": {}, "row_headers": true, "row_resizing": true, "rows": 7, "search_token": "", "stretch_headers": "all", "tabbable": null, "tooltip": null}}, "42f891ff1fb445ddb727fdddcc280ea4": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Quantity"}}, "2ef5c2f9f7c441ff920b2d30cbcfc322": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 6, "row_start": 1, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1, 10, 20, 30, 40, 50]}}, "1a0e41921de947c9bf881a6969cb5ed7": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Fixed Cost"}}, "e98f269d00804bd2af3730b5d75b65d5": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 6, "row_start": 1, "squeeze_column": true, "squeeze_row": false, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1000, 1000, 1000, 1000, 1000, 1000]}}, "17e7603c20e8482f9c8b128c815ca4c0": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "LightGreen"}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Fixed Cost Per Unit"}}, "9c0e08657f194985a03f5ff3764f84db": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 6, "row_start": 1, "squeeze_column": true, "squeeze_row": false, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1000.0, 100.0, 50.0, 33.333333333333336, 25.0, 20.0]}}, "561682d7fe984347aeca43d55ceaae29": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "0d82af2745ad4dcb91f7c71367f9c766": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.7.0", "_view_name": "SheetView", "cells": ["IPY_MODEL_28bfedc1caf042548d6d7a3e1b38fda2", "IPY_MODEL_e7039a379e5643e9ab60e2ac5c38948e", "IPY_MODEL_75a83f19dc164d9bae85625cc7065f64", "IPY_MODEL_6966fc29e9694187a2d8388bb1a52741", "IPY_MODEL_f346c7b79286419e8ddc7eac86867e8b", "IPY_MODEL_fc17a6e5519245b6ab8b6c92c54b3623", "IPY_MODEL_0bde54a264be4d24ba7244b5d49d4a79", "IPY_MODEL_df3ded0392814a898e5c16b83474db28", "IPY_MODEL_21858096a58c42449988edf51ba3d092", "IPY_MODEL_ed5ef3b07d674aa38532587ee21ae132", "IPY_MODEL_c04589ac3d19429abd8e93a7ad41227a", "IPY_MODEL_8ae68aee2e0c4495b393f11e9af9cfcd", "IPY_MODEL_6539cd07ca9b4c62846252507bae21e6", "IPY_MODEL_e1d997bd0f274b03b2463bf5858b56ca", "IPY_MODEL_e2265b1c395b4aa48dbff81b84439c2d", "IPY_MODEL_cabdf0122ca24a54b9521cac298755c7"], "column_headers": true, "column_resizing": true, "column_width": null, "columns": 5, "layout": "IPY_MODEL_561682d7fe984347aeca43d55ceaae29", "named_cells": {}, "row_headers": true, "row_resizing": true, "rows": 4, "search_token": "", "stretch_headers": "all", "tabbable": null, "tooltip": null}}, "28bfedc1caf042548d6d7a3e1b38fda2": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 4, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": false, "style": {"backgroundColor": "LightGreen"}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": [["Concept", "actual result", "Budgeted amount", "Difference between actual result and budget", "Percentage difference"]]}}, "e7039a379e5643e9ab60e2ac5c38948e": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Old ad pages"}}, "75a83f19dc164d9bae85625cc7065f64": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": 760}}, "6966fc29e9694187a2d8388bb1a52741": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": 800}}, "f346c7b79286419e8ddc7eac86867e8b": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 2, "row_start": 2, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Mean ratio per sheet"}}, "fc17a6e5519245b6ab8b6c92c54b3623": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 2, "row_start": 2, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": 5080}}, "0bde54a264be4d24ba7244b5d49d4a79": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 2, "row_start": 2, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": 5200}}, "df3ded0392814a898e5c16b83474db28": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 0, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 3, "row_start": 3, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "text", "value": "Ad revenue"}}, "21858096a58c42449988edf51ba3d092": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 1, "column_start": 1, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 3, "row_start": 3, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": 3860800}}, "ed5ef3b07d674aa38532587ee21ae132": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 2, "column_start": 2, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.000", "read_only": false, "renderer": null, "row_end": 3, "row_start": 3, "squeeze_column": true, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": 4160000}}, "c04589ac3d19429abd8e93a7ad41227a": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 3, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": ".2f", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": -40}}, "8ae68aee2e0c4495b393f11e9af9cfcd": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 3, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": ".2f", "read_only": false, "renderer": null, "row_end": 2, "row_start": 2, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": -120}}, "6539cd07ca9b4c62846252507bae21e6": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 3, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": ".5f", "read_only": false, "renderer": null, "row_end": 3, "row_start": 3, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": -299200}}, "e1d997bd0f274b03b2463bf5858b56ca": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 4, "column_start": 4, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": ".2f", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": -5.0}}, "e2265b1c395b4aa48dbff81b84439c2d": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 4, "column_start": 4, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": ".2f", "read_only": false, "renderer": null, "row_end": 2, "row_start": 2, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": -2.307692307692308}}, "cabdf0122ca24a54b9521cac298755c7": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.7.0", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.7.0", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 4, "column_start": 4, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": ".2f", "read_only": false, "renderer": null, "row_end": 3, "row_start": 3, "squeeze_column": true, "squeeze_row": true, "style": {"backgroundColor": "#FFCCCB"}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": -7.1923076923076925}}}, "version_major": 2, "version_minor": 0}</script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Accounting Basics';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Accounting Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to Accounting Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Accounting</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/bayonadrian.github.io/AccountingBook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/bayonadrian.github.io/AccountingBook/issues/new?title=Issue%20on%20page%20%2FAccounting Basics.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Accounting Basics.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Accounting</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Accounting</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost">Cost</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-accounting">Cost Accounting</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-management">Cost Management</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-accounting">Financial Accounting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#management-accounting">Management accounting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contrast">Contrast</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-terminology">Cost Terminology</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-accumulation-cost-pools">Cost Accumulation/Cost Pools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-assignment">Cost Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-costs">Direct Costs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-material-costs-dm">Direct Material costs (DM)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-manufacturing-labor-costs-dml">Direct Manufacturing Labor costs (DML)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-labor">Direct Labor</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indirect-costs">Indirect Costs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#allocation">Allocation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indirect-manufacturing-costs-manufacturing-overhead-moh">Indirect Manufacturing Costs/Manufacturing Overhead(MOH)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-affecting-direct-indirect-cost-classifications">Factors Affecting Direct/Indirect Cost Classifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upstream-costs">Upstream Costs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downstream-costs">Downstream costs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#average-cost-unit-cost">Average Cost/Unit Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-cost">Unit Cost</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-and-conversion-costs">Prime and Conversion Costs</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-cost">Prime Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conversion-cost">Conversion Cost</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-and-variable-costs">Fixed and Variable Costs</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-costs-vc">Variable costs (VC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-costs-fc">Fixed costs (FC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-cost-per-unit">Fixed Cost Per Unit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-cost">Total Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-cost-to-get-unit-price">Total Cost to get Unit Price</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complete-or-correct">Complete or correct!!</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#period-costs">Period Costs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inventoriable-costs">Inventoriable Costs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#need-for-high-quality-information">Need for High Quality Information</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#strategies">Strategies</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#key-success-facts">Key Success Facts</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-making-planning-and-control-the-five-step-decision-making-process">Decision Making, Planning, and Control: The Five-Step Decision-Making Process</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-performance-report-evaluation">Example of performance report evaluation</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#corporate-social-responsibility-csr">Corporate Social Responsibility (CSR)</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell tag_remove-input docutils container">
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="accounting">
+<h1>Accounting<a class="headerlink" href="#accounting" title="Permalink to this heading">#</a></h1>
+<p>Accounting is the system of control and registration of expenses, income and other operations that are carried out within a business, company or entity.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cost">
+<h1>Cost<a class="headerlink" href="#cost" title="Permalink to this heading">#</a></h1>
+<p>The cost to accountants is the cost to be able to achieve a specific objective. This is one of the most essential concepts for accounting.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cost-accounting">
+<h1>Cost Accounting<a class="headerlink" href="#cost-accounting" title="Permalink to this heading">#</a></h1>
+<p>Cost accounting measures and reports financial and non-financial information related to the acquisition and use of resources. It seeks to provide information related to:</p>
+<ul class="simple">
+<li><p>The accumulation of costs and use of resources to produce and sell products and services by the company.</p></li>
+<li><p>The recovery of costs related to the purchase of products and services by customers.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cost-management">
+<h1>Cost Management<a class="headerlink" href="#cost-management" title="Permalink to this heading">#</a></h1>
+<p>Cost management includes the identification, reporting and analysis of all operating costs, in turn managing operations in a range that goes from quality to quantity of materials. Closing of divisions is also included.</p>
+<section id="financial-accounting">
+<h2>Financial Accounting<a class="headerlink" href="#financial-accounting" title="Permalink to this heading">#</a></h2>
+<p>Financial accounting focuses on reporting to external parties, which can be investors, regulators, banks and others, in a clear and honest way the economic situation of the company, using standardized reports which reveal the position of the company in a period of time. These reports are known as:</p>
+<ul class="simple">
+<li><p>Income statement (statement of comprehensive income).</p></li>
+<li><p>Balance sheet (statement of financial position).</p></li>
+<li><p>Statement of cash flow.</p></li>
+</ul>
+<p>Financial accountants report financial results based on generally accepted accounting principles and standards (GAAP). In Canada there are two formats IFRS and ASPE.</p>
+</section>
+<section id="management-accounting">
+<h2>Management accounting<a class="headerlink" href="#management-accounting" title="Permalink to this heading">#</a></h2>
+<p>Business accounting measures, analyzes and reports financial and non-financial information to the internal managers of the company, what is sought is to use past information to predict future information.</p>
+</section>
+<section id="contrast">
+<h2>Contrast<a class="headerlink" href="#contrast" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p>Management accounting</p></th>
+<th class="head text-left"><p>Financial</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>purpose</p></td>
+<td class="text-left"><p>Help managers make decisions</p></td>
+<td class="text-left"><p>Communicate the financial situation of the organization</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Main users</p></td>
+<td class="text-left"><p>Organization Manager</p></td>
+<td class="text-left"><p>External users such as investors, banks, regulators…</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Focus and emphasis</p></td>
+<td class="text-left"><p>Future oriented</p></td>
+<td class="text-left"><p>Oriented to the past</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Measuring and reporting rules</p></td>
+<td class="text-left"><p>Internal reports do not have to follow IFRS/ASPE, but are based on cost-benefit analysis</p></td>
+<td class="text-left"><p>Must be prepared in accordance with IFRS/ASPE rules</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Time lapse</p></td>
+<td class="text-left"><p>Hourly reports for 15 to 20 years with financial and non-financial information on the areas of the company</p></td>
+<td class="text-left"><p>Annual and Quarterly Financial Reports Presented as Consolidated Financial Reports</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Behavioral implications</p></td>
+<td class="text-left"><p>Influencing managers and other employees</p></td>
+<td class="text-left"><p>Information about economic events and also influences behavior</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cost-terminology">
+<h1>Cost Terminology<a class="headerlink" href="#cost-terminology" title="Permalink to this heading">#</a></h1>
+<section id="cost-accumulation-cost-pools">
+<h2>Cost Accumulation/Cost Pools<a class="headerlink" href="#cost-accumulation-cost-pools" title="Permalink to this heading">#</a></h2>
+<p>It is the accumulation of the costs of the company in an organized way.</p>
+</section>
+<section id="cost-assignment">
+<h2>Cost Assignment<a class="headerlink" href="#cost-assignment" title="Permalink to this heading">#</a></h2>
+<p>It is the allocation of costs to different objects.</p>
+</section>
+<section id="direct-costs">
+<h2>Direct Costs<a class="headerlink" href="#direct-costs" title="Permalink to this heading">#</a></h2>
+<p>Direct costs are directly linked to the production of a product, these can be directed towards an object or product effectively.</p>
+<section id="direct-material-costs-dm">
+<h3>Direct Material costs (DM)<a class="headerlink" href="#direct-material-costs-dm" title="Permalink to this heading">#</a></h3>
+<p>They are all materials directly related to the production process.</p>
+</section>
+<section id="direct-manufacturing-labor-costs-dml">
+<h3>Direct Manufacturing Labor costs (DML)<a class="headerlink" href="#direct-manufacturing-labor-costs-dml" title="Permalink to this heading">#</a></h3>
+<p>They are the costs of labor used in the direct manufacture of a good or service during the production process.</p>
+</section>
+<section id="direct-labor">
+<h3>Direct Labor<a class="headerlink" href="#direct-labor" title="Permalink to this heading">#</a></h3>
+<p>These are direct labor costs, in other words the labor necessary to produce a good or service directly but that does not enter into the manufacturing process, such as unit commissions.</p>
+</section>
+</section>
+<section id="indirect-costs">
+<h2>Indirect Costs<a class="headerlink" href="#indirect-costs" title="Permalink to this heading">#</a></h2>
+<p>Indirect costs cannot be directly attributable to the production of goods and services.</p>
+<section id="allocation">
+<h3>Allocation<a class="headerlink" href="#allocation" title="Permalink to this heading">#</a></h3>
+<p>This term refers to a cost that can be distributed among several goods or services produced.</p>
+</section>
+<section id="indirect-manufacturing-costs-manufacturing-overhead-moh">
+<h3>Indirect Manufacturing Costs/Manufacturing Overhead(MOH)<a class="headerlink" href="#indirect-manufacturing-costs-manufacturing-overhead-moh" title="Permalink to this heading">#</a></h3>
+<p>They are labor costs but not direct in the production process of a good or service, such as supervision costs, which are linked not to one product but to several.</p>
+</section>
+</section>
+<section id="factors-affecting-direct-indirect-cost-classifications">
+<h2>Factors Affecting Direct/Indirect Cost Classifications<a class="headerlink" href="#factors-affecting-direct-indirect-cost-classifications" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Selection of the differentiated cost object</p></th>
+<th class="head text-left"><p>The materiality or importance of the cost in question</p></th>
+<th class="head text-left"><p>Information Collection Technology Available</p></th>
+<th class="head text-left"><p>Operations Design</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>The classification of a cost group as direct or indirect will change depending on the cost object.</p></td>
+<td class="text-left"><p>The lower the cost, the less likely it is to be economically feasible to trace that cost back to a particular cost object.</p></td>
+<td class="text-left"><p>Cost systems Integrated cost information systems access cost data electronically through barcodes and radio frequency identification.</p></td>
+<td class="text-left"><p>Integrated cost information systems access cost data electronically through barcodes and radio frequency identification.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="upstream-costs">
+<h2>Upstream Costs<a class="headerlink" href="#upstream-costs" title="Permalink to this heading">#</a></h2>
+<p>These are costs incurred before production.</p>
+</section>
+<section id="downstream-costs">
+<h2>Downstream costs<a class="headerlink" href="#downstream-costs" title="Permalink to this heading">#</a></h2>
+<p>These are the costs incurred after production.</p>
+</section>
+<section id="average-cost-unit-cost">
+<h2>Average Cost/Unit Cost<a class="headerlink" href="#average-cost-unit-cost" title="Permalink to this heading">#</a></h2>
+<p>This is the average cost or the median of the costs.</p>
+</section>
+<section id="unit-cost">
+<h2>Unit Cost<a class="headerlink" href="#unit-cost" title="Permalink to this heading">#</a></h2>
+<p>Unit cost is the cost of each singularly produced good or service.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="prime-and-conversion-costs">
+<h1>Prime and Conversion Costs<a class="headerlink" href="#prime-and-conversion-costs" title="Permalink to this heading">#</a></h1>
+<section id="prime-cost">
+<h2>Prime Cost<a class="headerlink" href="#prime-cost" title="Permalink to this heading">#</a></h2>
+<p>These are the direct manufacturing costs (DM, DML). Algebraically we have:</p>
+<div class="math notranslate nohighlight">
+\[ \text{Prime Cost} = DML + DM \]</div>
+</section>
+<section id="conversion-cost">
+<h2>Conversion Cost<a class="headerlink" href="#conversion-cost" title="Permalink to this heading">#</a></h2>
+<p>Conversion costs are all manufacturing costs other than direct material costs required to convert direct materials into finished goods (DML, MOH).</p>
+<div class="math notranslate nohighlight">
+\[\text{Conversion Cost} = DML + MOH \]</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fixed-and-variable-costs">
+<h1>Fixed and Variable Costs<a class="headerlink" href="#fixed-and-variable-costs" title="Permalink to this heading">#</a></h1>
+<p>It is possible to imagine a company with the following data.</p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "e8a6476111744b96aa3e5a84340f2b3a"}</script></div>
+</div>
+<section id="variable-costs-vc">
+<h2>Variable costs (VC)<a class="headerlink" href="#variable-costs-vc" title="Permalink to this heading">#</a></h2>
+<p>Variable costs are fixed based on each good or service produced, but it becomes variable in addition, since each new good or service produced has a cost which adds to the final result. So this is the sum of all costs per unit.</p>
+<div class="math notranslate nohighlight">
+\[\sum{\text{Unit Cost}}\]</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "ae930b7158704a25b6646c8a61c7593d"}</script></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/4c3e66b99b531f31a25f0396deddfa70fd2b76eaf6a5852403ae033706f94e90.png" src="_images/4c3e66b99b531f31a25f0396deddfa70fd2b76eaf6a5852403ae033706f94e90.png" />
+</div>
+</div>
+<p>So we can see that it has a linear growth.</p>
+</section>
+<section id="fixed-costs-fc">
+<h2>Fixed costs (FC)<a class="headerlink" href="#fixed-costs-fc" title="Permalink to this heading">#</a></h2>
+<p>Fixed costs are costs that do not vary over time, so that regardless of the quantity produced they remain the same, such as renting a product.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "0129d2f742f94328bb1ae9840655f3d9"}</script></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/3c6529f57102c43b8179c25e0003145f676ae1fc290f193f4d1e5deb307a7651.png" src="_images/3c6529f57102c43b8179c25e0003145f676ae1fc290f193f4d1e5deb307a7651.png" />
+</div>
+</div>
+<p>It is possible to observe how the fixed cost has a straight line which does not change over time.</p>
+</section>
+<section id="fixed-cost-per-unit">
+<h2>Fixed Cost Per Unit<a class="headerlink" href="#fixed-cost-per-unit" title="Permalink to this heading">#</a></h2>
+<p>There is a relationship between the fixed cost and the cost per unit, this relationship indicates that the higher the production, the lower the fixed cost, and this is because if there is a fixed cost, the higher the production, the greater the benefit and it is possible to divide the cost between the number of units produced. For example, assuming a rent of 1000 dollars a month, if nothing is produced, the cost is the same, but if 1000 units are produced, the benefit obtained from the rent is one dollar of rent for one dollar of unit.</p>
+<div class="math notranslate nohighlight">
+\[ \text{Fixed Cost Per Unit} =  \frac{\text{Fixed Cost}}{\text{Quantity}}\]</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "ef1f0263e6ec46daba89d5760a608e6b"}</script></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "599161a5e8744e21aacafa3e01ed8234"}</script></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/b23760b01d43fc194885cc58cdb08d7aff9a54ee1b0ad2b1218de7cf3ef0c6ee.png" src="_images/b23760b01d43fc194885cc58cdb08d7aff9a54ee1b0ad2b1218de7cf3ef0c6ee.png" />
+</div>
+</div>
+<p>It is possible to observe an exponential decay with a concave line.</p>
+</section>
+<section id="total-cost">
+<h2>Total Cost<a class="headerlink" href="#total-cost" title="Permalink to this heading">#</a></h2>
+<p>Total cost is the sum of variable and fixed costs, as follows:</p>
+<div class="math notranslate nohighlight">
+\[ \text{Total Cost} = VC + FC \]</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p>VC(Variable Cost)</p></li>
+<li><p>FC(Fixed Cost)</p></li>
+</ul>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fixed Cost</th>
+      <th>Variable Cost</th>
+      <th>Total Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1000</td>
+      <td>10</td>
+      <td>1010</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1000</td>
+      <td>100</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1000</td>
+      <td>200</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1000</td>
+      <td>300</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1000</td>
+      <td>400</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1000</td>
+      <td>500</td>
+      <td>1500</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="total-cost-to-get-unit-price">
+<h2>Total Cost to get Unit Price<a class="headerlink" href="#total-cost-to-get-unit-price" title="Permalink to this heading">#</a></h2>
+<p>Hasta ahora hemos asumido que la empresa tiene un precio unitario ya establecido pero por lo general no se hace asi ya que para obtener el Costo Unitario se necesita el costo total, es asi como se emplea el Costo Total para obtener el Costo Unitario. De modo que:</p>
+<div class="math notranslate nohighlight">
+\[ \text{Total Cost} = \frac{\text{Total Cost}}{Quantity} \]</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Variable Unit Cost</th>
+      <th>Quantity</th>
+      <th>Fixed Cost</th>
+      <th>Variable Cost</th>
+      <th>Fixed Cost Per Unit</th>
+      <th>Total Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>1</td>
+      <td>1000</td>
+      <td>10</td>
+      <td>1000.000000</td>
+      <td>1010</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10</td>
+      <td>10</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>100.000000</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10</td>
+      <td>20</td>
+      <td>1000</td>
+      <td>200</td>
+      <td>50.000000</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10</td>
+      <td>30</td>
+      <td>1000</td>
+      <td>300</td>
+      <td>33.333333</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10</td>
+      <td>40</td>
+      <td>1000</td>
+      <td>400</td>
+      <td>25.000000</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10</td>
+      <td>50</td>
+      <td>1000</td>
+      <td>500</td>
+      <td>20.000000</td>
+      <td>1500</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Variable Unit Cost</th>
+      <th>Quantity</th>
+      <th>Fixed Cost</th>
+      <th>Variable Cost</th>
+      <th>Fixed Cost Per Unit</th>
+      <th>Total Cost</th>
+      <th>Total Unit Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>1</td>
+      <td>1000</td>
+      <td>10</td>
+      <td>1000.000000</td>
+      <td>1010</td>
+      <td>1010.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10</td>
+      <td>10</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>100.000000</td>
+      <td>1100</td>
+      <td>110.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10</td>
+      <td>20</td>
+      <td>1000</td>
+      <td>200</td>
+      <td>50.000000</td>
+      <td>1200</td>
+      <td>60.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10</td>
+      <td>30</td>
+      <td>1000</td>
+      <td>300</td>
+      <td>33.333333</td>
+      <td>1300</td>
+      <td>43.333333</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10</td>
+      <td>40</td>
+      <td>1000</td>
+      <td>400</td>
+      <td>25.000000</td>
+      <td>1400</td>
+      <td>35.000000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10</td>
+      <td>50</td>
+      <td>1000</td>
+      <td>500</td>
+      <td>20.000000</td>
+      <td>1500</td>
+      <td>30.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/22854e4f4aa2657566e167751cfc97445349ee2655c3aa48f6e9595b418c0c61.png" src="_images/22854e4f4aa2657566e167751cfc97445349ee2655c3aa48f6e9595b418c0c61.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="complete-or-correct">
+<h1>Complete or correct!!<a class="headerlink" href="#complete-or-correct" title="Permalink to this heading">#</a></h1>
+<p>Note that for the previous examples the value of 10 was used but it is not really the correct form.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="period-costs">
+<h1>Period Costs<a class="headerlink" href="#period-costs" title="Permalink to this heading">#</a></h1>
+<p>Period costs are all costs on the income statement other than cost of goods sold, these are not manufacturing costs, operating expenses, or non-inventoriable costs. Because there is insufficient evidence to conclude that they will generate a benefit in the future, they are not considered an asset. Under GAAP, costs for the period are recorded as expenses when incurred.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="inventoriable-costs">
+<h1>Inventoriable Costs<a class="headerlink" href="#inventoriable-costs" title="Permalink to this heading">#</a></h1>
+<p>Inventoriable costs are all the costs of a product that are considered as assets in the statement of comprehensive income. Cost of goods sold includes all three manufacturing costs (direct materials, direct labor, and MOH) incurred to produce the goods being sold. Inventoriable costs arise only for companies in the manufacturing sector.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="need-for-high-quality-information">
+<h1>Need for High Quality Information<a class="headerlink" href="#need-for-high-quality-information" title="Permalink to this heading">#</a></h1>
+<p>In order to carry out all accounting processes successfully, quality information is necessary, which is used to:</p>
+<ul class="simple">
+<li><p>Strategic decisions that require prior information, analysis and decision making.</p></li>
+<li><p>Short-term operational decisions required when exceptions arise.</p></li>
+</ul>
+<p>This within activities that convert resources into a product or service ready for sale.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="strategies">
+<h1>Strategies<a class="headerlink" href="#strategies" title="Permalink to this heading">#</a></h1>
+<p>It specifies how an organization matches its own capabilities with market opportunities. For this we have two strategies:</p>
+<ul class="simple">
+<li><p>Cost leadership: quality products or services at low prices (reduced prices)</p></li>
+<li><p>Value leadership: higher value unique products or services (Value Added)</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="key-success-facts">
+<h1>Key Success Facts<a class="headerlink" href="#key-success-facts" title="Permalink to this heading">#</a></h1>
+<p>Customers expect ever-increasing performance of goods and services throughout the value chain, so this is where the key success factors appear, which are key activities for the successful performance of business activities. These factors are:</p>
+<ul class="simple">
+<li><p>Cost and efficiency (Lower costs, higher efficiency).</p></li>
+<li><p>Quality (Higher quality through Total Quality Management).</p></li>
+<li><p>Time (Better punctuality (development of new products; Customer response)).</p></li>
+<li><p>Innovation (Innovation in products and services).</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="decision-making-planning-and-control-the-five-step-decision-making-process">
+<h1>Decision Making, Planning, and Control: The Five-Step Decision-Making Process<a class="headerlink" href="#decision-making-planning-and-control-the-five-step-decision-making-process" title="Permalink to this heading">#</a></h1>
+<p>Decision making is one of the most important points of accounting, since accounting is a point of support for making these decisions, here we have five steps, which are:</p>
+<ol class="arabic simple">
+<li><p>Identify the problem and the uncertainties.</p></li>
+<li><p>Get information.</p></li>
+<li><p>Make predictions about the future.</p></li>
+<li><p>Decide on one of the available alternatives.</p></li>
+<li><p>Implement the decision, evaluate performance and learn.</p></li>
+</ol>
+<p>It is possible to break these steps into two groups, which are:</p>
+<ul class="simple">
+<li><p>Planning: This is an intentional analysis of the information to select and classify the objectives, this covers the first 4 steps.</p></li>
+<li><p>Control: measure and evaluate performance and take corrective action, this covers step 5.</p></li>
+</ul>
+<section id="example-of-performance-report-evaluation">
+<h2>Example of performance report evaluation<a class="headerlink" href="#example-of-performance-report-evaluation" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "0d82af2745ad4dcb91f7c71367f9c766"}</script></div>
+</div>
+<p>Here we can see some metrics to evaluate the performance of certain operations of the company, this is just an example since various metrics can be used to evaluate said performance. The metric used uses the following formulas:</p>
+<ul class="simple">
+<li><p>Difference between actual and proposed result:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ Difference = Budget- Real \]</div>
+<ul class="simple">
+<li><p>Percentage difference:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \text{Percentual diff} =\frac{Difference}{Budget} \]</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="corporate-social-responsibility-csr">
+<h1>Corporate Social Responsibility (CSR)<a class="headerlink" href="#corporate-social-responsibility-csr" title="Permalink to this heading">#</a></h1>
+<p>Corporate social responsibility involves a voluntary integration of certain aspects in favor of society to the activities of the company, these aspects are:</p>
+<ul class="simple">
+<li><p>Corporate Social Responsibility</p>
+<ul>
+<li><p>Voluntary integration of social and environmental concerns into business decisions.</p></li>
+<li><p>Triple bottom line: profits, people, planet.</p></li>
+</ul>
+</li>
+<li><p>Sustainability Accounting</p>
+<ul>
+<li><p>Information on financial and non-financial activities and their impact on society, the environment and the financial aspects of an organization’s performance.</p></li>
+</ul>
+</li>
+<li><p>Alternative reports</p>
+<ul>
+<li><p>Based on specific goals and strategies (cooperatives)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to Accounting Book</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Accounting</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost">Cost</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-accounting">Cost Accounting</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-management">Cost Management</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-accounting">Financial Accounting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#management-accounting">Management accounting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contrast">Contrast</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-terminology">Cost Terminology</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-accumulation-cost-pools">Cost Accumulation/Cost Pools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-assignment">Cost Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-costs">Direct Costs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-material-costs-dm">Direct Material costs (DM)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-manufacturing-labor-costs-dml">Direct Manufacturing Labor costs (DML)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-labor">Direct Labor</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indirect-costs">Indirect Costs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#allocation">Allocation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indirect-manufacturing-costs-manufacturing-overhead-moh">Indirect Manufacturing Costs/Manufacturing Overhead(MOH)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-affecting-direct-indirect-cost-classifications">Factors Affecting Direct/Indirect Cost Classifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upstream-costs">Upstream Costs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downstream-costs">Downstream costs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#average-cost-unit-cost">Average Cost/Unit Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-cost">Unit Cost</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-and-conversion-costs">Prime and Conversion Costs</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-cost">Prime Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conversion-cost">Conversion Cost</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-and-variable-costs">Fixed and Variable Costs</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-costs-vc">Variable costs (VC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-costs-fc">Fixed costs (FC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-cost-per-unit">Fixed Cost Per Unit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-cost">Total Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-cost-to-get-unit-price">Total Cost to get Unit Price</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complete-or-correct">Complete or correct!!</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#period-costs">Period Costs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inventoriable-costs">Inventoriable Costs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#need-for-high-quality-information">Need for High Quality Information</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#strategies">Strategies</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#key-success-facts">Key Success Facts</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-making-planning-and-control-the-five-step-decision-making-process">Decision Making, Planning, and Control: The Five-Step Decision-Making Process</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-performance-report-evaluation">Example of performance report evaluation</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#corporate-social-responsibility-csr">Corporate Social Responsibility (CSR)</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Adrian Bayona
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
