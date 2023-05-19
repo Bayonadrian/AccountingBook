@@ -2,5 +2,7 @@
 
 This is a book of Accounting made by an student to students.
 
-```{tableofcontents}
+```{contents}
+:local:
+:depth: 1
 ```
